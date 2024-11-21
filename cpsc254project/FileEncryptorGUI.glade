@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.40.0 -->
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+  <object class="GtkWindow" id="MainWindow">
+    <property name="can-focus">False</property>
+    <property name="window-position">center-always</property>
+    <property name="default-width">1000</property>
+    <property name="default-height">650</property>
+    <child>
+      <object class="GtkStack" id="GtkStackPanel">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <child>
+          <object class="GtkFixed" id="GtkFixedPanel">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <child>
+              <object class="GtkButton" id="GenPubKey">
+                <property name="label" translatable="yes">Generate Public Key</property>
+                <property name="width-request">172</property>
+                <property name="height-request">44</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="GenPubKey_clicked_cb" swapped="no"/>
+              </object>
+              <packing>
+                <property name="x">25</property>
+                <property name="y">50</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="Pub_Key_Entry">
+                <property name="width-request">500</property>
+                <property name="height-request">50</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+              </object>
+              <packing>
+                <property name="x">225</property>
+                <property name="y">47</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="GenPriKey">
+                <property name="label" translatable="yes">Generate Private Key</property>
+                <property name="width-request">50</property>
+                <property name="height-request">44</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="GenPriKey_clicked_cb" swapped="no"/>
+              </object>
+              <packing>
+                <property name="x">25</property>
+                <property name="y">117</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="Pri_Key_Entry">
+                <property name="width-request">500</property>
+                <property name="height-request">50</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+              </object>
+              <packing>
+                <property name="x">225</property>
+                <property name="y">113</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="name">page0</property>
+            <property name="title" translatable="yes">page0</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+    <child type="titlebar">
+      <object class="GtkHeaderBar" id="HeaderBar">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <property name="title" translatable="yes">CPSC 254 File Encryptor</property>
+        <property name="show-close-button">True</property>
+      </object>
+    </child>
+  </object>
+</interface>
