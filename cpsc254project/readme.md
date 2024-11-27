@@ -1,4 +1,7 @@
 IMPORTANT: THIS PROGRAM REQUIRES PYCRYPTODOME TO RUN
+sudo apt update 
+sudo apt install python3-pip 
+pip install pycryptodome
 
 to run the program on command line:
 python3 FileEncryptor.py
