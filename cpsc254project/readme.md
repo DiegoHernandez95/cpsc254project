@@ -13,5 +13,3 @@ then in the main window use the combo box to select the key you want to use for 
 
 on the left side of the screen either drag and drop files or select the button to open the file explorer and select the file from there
 after that press the encrypt button to generate a .enc file, then press decrypt using the appropriate key in the combo box to generate a .dec file
-
-Currently RSA keys typically fail when trying to decrypt text files, but if you are encrypting AES keys it will work just fine.
