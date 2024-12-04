@@ -13,7 +13,7 @@ class IconFinder:
         _, file_extension = os.path.splitext(file_path)
         file_extension = file_extension.lower()
 
-        if file_extension in [".txt", ".log", ".csv"]:
+        if file_extension in [".txt", ".log", ".csv", ".pem"]:
             icon_name = "text-x-generic"
         elif file_extension in [".jpg", ".jpeg", ".png", ".gif", ".bmp"]:
             icon_name = "image-x-generic"

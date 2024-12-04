@@ -27,8 +27,6 @@ class Decryptor:
             print(f"Error decrypting file with AES: {e}")
             return None
 
-    # having a lot of trouble decrypting small text files
-    # but decrypting AES keys works okay
     @staticmethod
     def decryptRSAfile(file_path, rsa_private_key_path):
         try:

@@ -1,7 +1,9 @@
 IMPORTANT: THIS PROGRAM REQUIRES PYCRYPTODOME TO RUN
-sudo apt update 
-sudo apt install python3-pip 
-pip install pycryptodome
+the version I used is in the project folder
+run the following commands to install it 
+python3 setup.py build
+sudo python3 setup.py install
+this worked in wsl 
 
 to run the program on command line:
 python3 FileEncryptor.py
@@ -12,4 +14,4 @@ if the .keys folder does not exist in the project directory it will be created (
 then in the main window use the combo box to select the key you want to use for encryption/decryption
 
 on the left side of the screen either drag and drop files or select the button to open the file explorer and select the file from there
-after that press the encrypt button to generate a .enc file, then press decrypt using the appropriate key in the combo box to generate a .dec file
+after that press the encrypt button to generate a .enc file, then press decrypt using the appropriate key in the combo box to generate a .dec file 

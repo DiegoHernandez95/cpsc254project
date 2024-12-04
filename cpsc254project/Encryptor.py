@@ -8,13 +8,13 @@ class Encryptor:
     @staticmethod
     def encryptAESfile(file_path, aes_key):
         try:
-            # after doing some research using an initialization vector
-            # helps further obfuscate the ciphertext making it difficult
-            # to find patterns in the data
+            # initialization vector makes ciphertext random
+            # even if encrypted multiple times with the same key
             iv = get_random_bytes(16)
 
-            # decided to use CBC mode, other options are CTR
+            # decided to use CBC mode, another option would be CTR
             # but it is not recommended
+            # GCM is also good since it provides authentication
             cipher = AES.new(aes_key, AES.MODE_CBC, iv)
             with open(file_path, "rb") as file:
                 plaintext = file.read()
