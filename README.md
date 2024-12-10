@@ -9,6 +9,8 @@ sudo apt update
 sudo apt install python3-pip
 pip install pycryptodome
 
+The ui for the program was made using GTK glade. I don't believe this needs to be installed but if there are issues running the program even with pycryptodome installed, maybe install glade and that will solve it. 
+
 to run the program on command line: python3 FileEncryptor.py
 
 To use the program, first press the Generate Keys button and create AES or RSA keys if the .keys folder does not exist in the project directory it will be created (honestly I might change this later, knowing where a hidden folder is kind of defeats the purpose, but atleast I can showcase the project.)
