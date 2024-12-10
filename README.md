@@ -1,3 +1,9 @@
+Contributors:
+Diego Hernandez
+Zedrick Bernal
+Mya Nanthavongdouangsy
+Chaitanya Talluri
+
 IMPORTANT: THIS PROGRAM REQUIRES PYCRYPTODOME TO RUN
 sudo apt update
 sudo apt install python3-pip
